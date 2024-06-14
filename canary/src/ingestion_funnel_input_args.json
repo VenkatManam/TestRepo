@@ -1,0 +1,22 @@
+{
+    "name": "Development Non Production",
+    "Dev": {
+        "connector.class": "com.snowflake.kafka.connector.snoflakeSinkConnector",
+        "snowflake.topic2table.map": "cyclone-ingestion-funnel-test",
+        "taxks.max": "3",
+        "buffer.flush.time": "120",
+        "db.name": "TPC_Ingestion_Funnel",
+        "schema.name": "DB_Schema",
+        "buffer.count.records": "100"
+    },
+    "Non-Production": {
+        "type": "",
+        "trouxId": "123-234-234",
+        "source.system": "Linux"
+    },
+    "Production": {
+        "monitoringType": "S3",
+        "enabled": false,
+        "s3BucketLocation": "Your-Bucket-Name"
+    }
+}
